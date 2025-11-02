@@ -1,0 +1,81 @@
+* {
+  height: 100vh;
+}
+
+.hero {
+  border: 5px solid red;
+  width: 200px;
+  height: 200px;
+
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  /* min-height: 80vh; */
+  /* width: 1000vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  /* content: hidden; */
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.relative {
+  /* top: 200px; */
+  /* right: 100px; */
+  border-radius: 5%;
+  width: 50%;
+  height: 1000px;
+  border: 5px solid orange;
+  position: relative;
+  /* overflow: hidden; */
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.fixed {
+  width: 100px;
+  height: 100px;
+  border: 5px solid blue;
+  position: fixed;
+}
+
+.absolute {
+  /* justify-content: center; */
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  border: 5px solid purple;
+  position: absolute;
+}
+
+.tengah {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  border: 5px solid pink;
+  /* box-shadow: 0 50px 100px red; */
+}
+
+.sticky {
+  bottom: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  border: 5px solid green;
+  position: sticky;
+}
+
+.hero .hero-content {
+  color: black;
+}
+
+.section-2 {
+  width: 100%;
+  border: solid 5px;
+  position: absolute;
+}

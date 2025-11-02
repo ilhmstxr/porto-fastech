@@ -1,0 +1,106 @@
+/* <nav>
+        <ul>
+            <li><a href="#hero">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skill</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <img src="assets/profile.jpg" alt="">
+            <h1>ahmad rizki</h1>
+            <p class="tagline">
+                web developer
+                designer
+                problem solver
+            </p>
+        </div>
+    </section> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-tile {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #667eea;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover{
+  color: #667eea;
+}
+
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero
+{
+    position: relative;
+    z-index: 1;
+}
+
+.hero img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    box-shadow:  0 10px 40px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
+}
+
+.hero img:hover{
+    transform: scale(1.05);
+}
